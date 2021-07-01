@@ -1,12 +1,16 @@
-const { Router } = require("express");
+const express = require("express");
+const fs = require('fs');
 
-const router = Router();
+const router = express.Router();
 
-const books = [];
+let books = [];
+
+const json_books = fs.readFileSync('src/books.json', 'utf-8');
+books = JSON.parse(json_books);
 
 
 router.get('/', (req, res) => {
-    res.render('index.ejs',{
+    res.render('index.ejs', {
         books
     });
 });
@@ -32,7 +36,12 @@ router.post('/new-entry', (req, res) => {
     }
 
 
-    books.push(req.body);
-    res.send('Recibido...')
+    books.push(newBook);
+
+    const json_books = JSON.stringify(books);
+    fs.writeFileSync('src/books.json', json_books, 'utf-8');
+
+    /* res.send('Recibido...') */
+    res.redirect('/');
 });
 module.exports = router;
