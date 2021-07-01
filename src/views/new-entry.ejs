@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../views/partials/header'); %>
+        <title>Nuevo libro</title>
+</head>
+
+<body>
+    <div class="container p-4">
+        <form method="POST" target="/new-entry" action="" class="card card-body">
+            <div class="form-group">
+                <label for="title" class="pb-2">Título: </label>
+                <input type="text" class="form-control" name="title" id="title" placeholder="Ingresa un nuevo título"
+                    autofocus required>
+            </div>
+            <div class="form-group">
+                <label for="author" class="pb-2 pt-2">Autor: </label>
+                <input type="text" class="form-control" name="author" id="author" placeholder="Autor" required>
+            </div>
+            <div class="form-group">
+                <label for="image" class="pb-2 pt-2">Imagenes: </label>
+                <input type="text" class="form-control" name="image" id="image" placeholder="http://your-image.com"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="description" class="pb-2 pt-2">Descripción:</label>
+                <textarea class="form-control" name="description" id="description" cols="" rows="2" required></textarea>
+            </div>
+
+                <input type="button" class="mt-3 btn btn-primary" value="Guardar">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
