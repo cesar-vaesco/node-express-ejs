@@ -1,5 +1,6 @@
 const express = require("express");
 const fs = require('fs');
+const { v4: uuidv4 } = require('uuid');
 
 const router = express.Router();
 
@@ -29,6 +30,7 @@ router.post('/new-entry', (req, res) => {
     }
 
     let newBook = {
+        id: uuidv4(),
         title,
         author,
         image,
@@ -45,3 +47,6 @@ router.post('/new-entry', (req, res) => {
     res.redirect('/');
 });
 module.exports = router;
+
+
+// https://www.youtube.com/watch?v=YiBDvtEP88M&t=1146s 1:00:36
