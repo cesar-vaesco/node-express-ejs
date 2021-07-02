@@ -20,6 +20,10 @@ router.get('/new-entry', (req, res) => {
     res.render('new-entry.ejs');
 });
 
+router.get('/404', (req, res) => {
+    res.render('404');
+});
+
 router.post('/new-entry', (req, res) => {
     /* console.log(req.body); */
     // guardarm en el arreglo los datos que llegan del request

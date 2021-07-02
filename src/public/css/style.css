@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    min-height: 100vh;
+    background: #70e1f5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ffd194, #70e1f5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ffd194, #70e1f5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #343434;
+}
+
+.titulo {
+    transform: rotate(20deg);
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 160px;
+    margin: 0;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background: url(/img/code-wallpaper.jpg) center;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.container a {
+    text-decoration: none;
+    background: #e55039aa;
+    color: #fff;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.container a:hover {
+    background: #e55036;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background: url(/img/code-wallpaper.jpg) center top;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    height: 100px;
+}
+
+.enlace {
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+/* .footer {
+    background: url(/img/ces_dev.jpg);
+    background-attachment: fixed;
+    background-position: center top;
+} */
