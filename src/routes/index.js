@@ -46,6 +46,20 @@ router.post('/new-entry', (req, res) => {
     /* res.send('Recibido...') */
     res.redirect('/');
 });
+
+router.get('/delete/:id', (req, res) => {
+    /* Castear funcionalidad de la ruta
+    console.log(req.params);
+    res.send('Rcibido...'); */
+    // Quitamos el libro del arreglo books usando el id que coincide con el de la búsqueda
+    books = books.filter( book => book.id != req.params.id);
+
+    const json_books = JSON.stringify(books);
+    fs.writeFileSync('src/books.json', json_books, 'utf-8');
+    res.redirect('/');
+
+
+});
 module.exports = router;
 
 
