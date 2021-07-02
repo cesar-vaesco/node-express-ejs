@@ -1,1 +1,30 @@
-[{"id":"398a038e-d8b0-4c12-a0fa-70c2c0e7b9c8","title":"El Sol Desnudo","author":"Issac Asimov","image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1564319069l/52398115._SX318_SY475_.jpg","description":"Segunda entrega de la serie que Isaac Asimov ha dedicado al detective Baley, y a su colaborador el robot humanoide Daneel Olivaw, uno de los cruces más memorables de la ciencia ficción con la novela policiaca."}]
+[
+    {
+        "id": "64f5d7ab-37ff-4b62-b4ed-db3f6aeaa633",
+        "title": "El Conde de Montecristo",
+        "author": "Alejandro Dumas",
+        "image": "https://www.normaeditorial.com/upload/media/albumes/0001/06/b966a1dcaac3d6282436d07c71fe0c75504bce4a.jpeg",
+        "description": "Las cualidades del joven Edmundo Dantès despiertan las envidias de sus amigos, que con sus falsas acusaciones consiguen que le condenen de por vida al Castillo de If."
+    },
+    {
+        "id": "f2d6de85-d92b-4658-abb5-f04deafeaba6",
+        "title": "La Biblia",
+        "author": "Iglesia",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/416SmuYxvIL._SX321_BO1,204,203,200_.jpg",
+        "description": "La biblia más leída en español fácil de entender."
+    },
+    {
+        "id": "3c8c98f1-82ff-4f88-b044-405ffabccc79",
+        "title": "La catedral del mar",
+        "author": "Idelfonso Falcones",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/51qyae+-DIL._SX324_BO1,204,203,200_.jpg",
+        "description": "Una catedral construida por el pueblo y para el pueblo en la Barcelona medieval es el escenario de una apasionante historia de intriga, violencia y pasión."
+    },
+    {
+        "id": "7e278580-8b84-45ff-ba4c-48dc61b3d142",
+        "title": "Los pilares de la Tierra",
+        "author": "Ken Follet",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/51HclwwO2kL._SX326_BO1,204,203,200_.jpg",
+        "description": "El gran maestro de la narrativa de acción y suspenso nos transporta a la Edad Media, a un fascinante mundo de reyes, damas, ciudades amuralladas."
+    }
+]
